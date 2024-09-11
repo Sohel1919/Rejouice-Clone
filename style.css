@@ -192,12 +192,12 @@ body{
 .page1-content h1{
     font-size: 27vw;
     font-weight: 100;
-    font-family: "rejouice" , "Roboto";
+    font-family: "rejouice" , "Roboto" , sans-serif;
     position: relative;
     line-height: 20rem;
 }
 .page1-content h1 span{
-    font-family: "rejouice", "Roboto";
+    font-family: "rejouice", "Roboto" , sans-serif;
 }
 .page2{
     height: 100vh;
