@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @font-face {
     font-family: NB;
     src: url(/NBInternationalProBoo.ttf);
@@ -192,12 +192,12 @@ body{
 .page1-content h1{
     font-size: 27vw;
     font-weight: 100;
-    font-family: "rejouice";
+    font-family: "rejouice" , "Roboto";
     position: relative;
     line-height: 20rem;
 }
 .page1-content h1 span{
-    font-family: "rejouice";
+    font-family: "rejouice", "Roboto";
 }
 .page2{
     height: 100vh;
