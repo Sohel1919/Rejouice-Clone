@@ -1,0 +1,380 @@
+
+@font-face {
+    font-family: NB;
+    src: url(/NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: rejouice;
+    src: url(/Rejouice-Headline.ttf);
+}
+@font-face {
+    font-family: PX;
+    src: url(/pxiEyp8kv8JHgFVrJJfecg.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "NB", sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    color: white;
+    overflow-x: hidden;
+}
+.loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 95;
+    color: #fff;
+}
+.loader h3{
+    font-size: 1.8vmax;
+    color: #fff;
+}
+.page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    text-shadow: 1px 1px 2px black;
+    position: relative;
+}
+.page1 video{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    position: absolute;
+    z-index: 0;
+}
+.page1 .cursor{
+    height: 7vw;
+    width: 7vw;
+    background-color: rgba(31, 29, 17, 0.726);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page1 .cursor h5{
+    font-weight: 100;
+    font-size: 1.15vmax;
+}
+.page1-content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+}
+.page1-content nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 2vw 3vw;
+}
+.page1-content nav h3{
+    font-size: 1.4vmax;
+    font-weight: 100;
+}
+.page1-content nav h4{
+    font-size: 1.2vmax;
+    font-weight: 100;
+    cursor: pointer;
+}
+.page1 .full{
+    height: 50vh;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    top: -150vh;
+}
+.page1 .close{
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    cursor: pointer;
+}
+.page1 .close h2{
+    font-size: 14px;
+    font-weight: 100;
+    color: #111;
+    text-shadow: none;
+}
+.page1 .full .video{
+    width: 30vw;
+    height: 20vw;
+    position: relative;
+}
+.page1 .full .tabs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.page1 .full  h4{
+    font-size: 40px;
+    font-weight: 100;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    position: relative;
+    width: fit-content;
+    line-height: 45px;
+}
+
+.page1 .full h4::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width:0%;
+    left: 0;
+    bottom: 0;
+    background-color: #111;
+}
+.page1 .full h4:hover::after{
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.page1 .full button{
+    background-color: transparent;
+    width: 100px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: relative;
+}
+
+.page1 .full button::before{
+    content: "";
+    height: 35px;
+    width: 0px;
+    background-color: #111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+    color: white;
+    transition: all 1s ease;
+}
+.page1 .full button:hover{
+    color: #fff;
+}
+
+.page1 .full button:hover::before{
+    width: 100px;
+    transition: all 1s ease;
+}
+.page1-content h1{
+    font-size: 27vw;
+    font-weight: 100;
+    font-family: "rejouice";
+    position: relative;
+    line-height: 20rem;
+}
+.page1-content h1 span{
+    font-family: "rejouice";
+}
+.page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    color: #111;
+}
+.page2 .parent .child1{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 100vw;
+    padding: 5vmax 3vmax 2vmax 3vmax;
+    position: relative;
+    margin-top: 20px;
+}
+.page2 .parent .child1 p{
+    font-size: 1.5vmax;
+}
+.page2 .line{
+    width: 95vw;
+    height: 0.5px;
+    background-color: #111;
+    margin: 10px auto;
+}
+.page2 .child2{
+    width: 95vw;
+    margin: 15px auto;
+}
+.page2 .child2 p{
+    font-size: 4vmax;
+}
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+    background-color: white;
+    color: black;
+}
+.page3-top{
+    text-align: center;
+}
+.page3-top h4{
+    font-size: 1vmax;
+    margin-bottom: 1vmax;
+    font-weight: 500;
+}
+.page3-top h4 span{
+    font-size: 0.75vmax;
+    background-color: #111;
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: white;
+}
+.page3-top h2{
+    font-size: 4vmax;
+    font-weight: 500;
+}
+.page3-elements{
+    width: 100%;
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8vmax;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+.page3-elements .box{
+    height: 100%;
+    min-width: 25rem;
+    background-color: blueviolet;
+    position: relative;
+    display: flex;
+}
+.page3-elements .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.page3-elements .box img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    transition: all ease 1s;
+    object-position: center;
+}
+.page3-elements .box img:hover{
+    opacity: 0;
+    transition: all ease 1s;
+}
+.page3 .header p{
+    font-size: 1.5vmax;
+}
+.page3 .header{
+    height: 30px;
+    width: 100vw;
+    padding: 5vmax 3vmax 2vmax 3vmax;
+    position: relative;
+    margin-top: 20px;
+}
+.page3 .line{
+    width: 90vw;
+    height: 0.5px;
+    background-color: #111;
+    margin: 10px auto;
+    margin-top: 30px;
+}
+.page3 .footer{
+    width: 90vw;
+    margin: 15px auto;
+    margin-top: 50px;
+    margin-left: 1vmax;
+}
+.page3 .footer p{
+    font-size: 4vmax;
+}
+.page4-parent{
+    height: 120vh;
+    width: 100%;
+    position: relative;
+}
+.page4{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-shadow: 1px 1px 1px black;
+}
+.page4 video{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+.page4 svg{
+    position: absolute;
+    height: 68%;
+}
+.text{
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text h2{
+    font-size: 4vmax;
+    font-weight: 100;
+}
+.text h4{
+    font-size: 1.6vmax;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px black;
+}
+.page4-parent .cursor{
+    height: 7vw;
+    width: 7vw;
+    background-color: #111;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cursor h5{
+    font-weight: 100;
+    font-size: 1.15vmax;
+}
